@@ -14,7 +14,7 @@ fi
 #Bar panel for bspwm
 #export PANEL_FIFO="/tmp/panel-fifo"
 xrdb -load ~/.Xresources &
-feh --bg-scale /home/damian/Pictures/Wallpapers/macosx.jpg
+feh --bg-scale /home/damian/Pictures/wallpaper
 #sxhkd &
 #setxkbmap -layout latam &
 #compton -cr 15 -o 0.50 -t -10 -l -20 -fD 5 &
