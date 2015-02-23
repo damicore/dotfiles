@@ -18,6 +18,13 @@ green=$(tput setaf 2)
 source /etc/bash_completion.d/herbstclient-completion
 
 # swap esc and caps lock
-setxkbmap -option caps:swapescape
+setxkbmap -option caps:swapescape -option ctrl:swap_lalt_lctl
 
 PS1='\[$blue\]\u\[$reset\] \[$red\]\w\[$reset\] \[$blue\]\$ \[$reset\]\[$white\] '
+
+# editor
+export EDITOR=vim
+
+#history
+export HISTCONTROL=ignoredups
+export HISTSIZE=1000
