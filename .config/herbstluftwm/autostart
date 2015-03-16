@@ -24,7 +24,7 @@ hc keybind $Mod-Return spawn urxvt
 hc keybind $Mod-w spawn luakit
 hc keybind $Mod-comma spawn ~/.config/herbstluftwm/scripts/hcpad.py -i 10
 hc keybind $Mod-period spawn ~/.config/herbstluftwm/scripts/hcpad.py -d 10
-hc keybind $Mod-space spawn dmenu_run -i -nb "${color['black']}" \
+hc keybind $Mod-r spawn dmenu_run -i -nb "${color['black']}" \
               -nf "${color['white']}" -sb "${color['blue']}" \
               -sf "${color['black']}"
 

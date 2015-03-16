@@ -2,7 +2,7 @@
 urxvt.scrollBar: false
 
 ! font
-*.font:         -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
+*.font:         xft:terminus:size=9
 
 ! special
 *.foreground:   #dadada

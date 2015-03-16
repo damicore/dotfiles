@@ -253,6 +253,10 @@ set nocompatible
         " Remap <leader>
         let mapleader=","
 
+        " User defined maps
+        map ñ ^
+        nmap <C-j> <C-w>j
+        nmap <C-k> <C-w>k
         " Quickly edit/source .vimrc
         noremap <leader>ve :edit $HOME/.vimrc<CR>
         noremap <leader>vs :source $HOME/.vimrc<CR>
@@ -274,8 +278,8 @@ set nocompatible
         vmap <C-down> ]egv
 
         " Move faster
-        map <C-j> <C-d>
-        map <C-k> <C-u>
+        "map <C-j> <C-d>
+        "map <C-k> <C-u>
 
         " Treat wrapped lines as normal lines
         nnoremap j gj

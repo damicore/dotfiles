@@ -16,7 +16,7 @@ fi
 xrdb -load ~/.Xresources &
 feh --bg-scale /home/damian/Pictures/wallpaper
 #sxhkd &
-setxkbmap -layout es &
+setxkbmap -layout latam &
 #compton -cr 15 -o 0.50 -t -10 -l -20 -fD 5 &
 exec herbstluftwm
 #exec wmaker
