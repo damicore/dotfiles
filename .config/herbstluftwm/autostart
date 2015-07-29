@@ -14,6 +14,10 @@ hc keyunbind --all
 hfsdir="$HOME/.config/herbstluftwm/scripts"
 source "$hfsdir/colors";
 
+# panel
+hc spawn $hfsdir/lemonbar.sh
+
+
 # keybindings
 Mod=Mod4
 hc keybind $Mod-Shift-q quit
@@ -89,7 +93,7 @@ hc keybind $Mod-Shift-l shift right
 
 # settings
 hc set tree_style "╾ ╼"
-hc pad 0 14 0 0 0
+hc pad 0 23 0 0 0
 hc set frame_bg_transparent 1
 
 ## colors & gaps
@@ -104,9 +108,6 @@ hc set window_border_normal_color ${color["black"]}
 hc set window_border_active_color ${color["white"]}
 hc set always_show_frame 0
 hc set window_gap 0
-
-# panel
-(sleep 1s && hc spawn $hfsdir/dzen_panel.sh)
 
 # workarond to make default_frame_layouts work on the original frame of tags
 

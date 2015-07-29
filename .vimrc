@@ -98,6 +98,11 @@ set nocompatible
     " REQUIREMENTS: (exuberant)-ctags
     Plugin 'majutsushi/tagbar'
 
+    " NERDTree
+    Plugin 'scrooloose/nerdtree'
+
+    " Base-16 colors:
+    Plugin 'chriskempson/base16-vim'
     " Finish Vundle stuff
     call vundle#end()
 
@@ -186,7 +191,7 @@ set nocompatible
     set noshowmode                                  " hide mode cmd line
     set noexrc                                      " don't use other .*rc(s)
     set nostartofline                               " keep cursor column pos
-    set nowrap                                      " don't wrap lines
+    "set nowrap                                      " don't wrap lines
     set numberwidth=5                               " 99999 lines
     set shortmess+=I                                " disable startup message
     set splitbelow                                  " splits go below w/focus
@@ -578,6 +583,11 @@ set nocompatible
     " Automatically remove preview window after autocomplete (mainly for clang_complete)
     autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
     autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+""" }}}
+    " Base 16
+    colorscheme base16-default
+    let base16colorspace=256  " Access colors present in 256 colorspace 
+    set background=dark
 """ }}}
 """ Local ending config, will overwrite anything above. Generally use this. {{{{
     if filereadable($HOME."/.vimrc.last")

@@ -5,6 +5,9 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# Export ~/bin on path
+
+export PATH=$PATH:/home/damian/bin
 alias ls='ls --color=auto'
 #Original:
 #PS1='[\u@\h \W]\$ '
@@ -25,12 +28,10 @@ PS1=' \[$blue\]\u\[$reset\] \[$red\]\w\[$reset\] \[$blue\]\$ \[$reset\]\[$white\
 # editor
 export EDITOR=vim
 
+# Base16 Shell
+BASE16_SHELL="$HOME/Code/shellscripts/monokai.sh"
+[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL ]]
+
 #history
 export HISTCONTROL=ignoredups
 export HISTSIZE=1000
-
-#For IBus:
-
-export GTK_IM_MODULE=ibus
-export XMODIFIERS=@im=ibus
-export QT_IM_MODULE=ibus

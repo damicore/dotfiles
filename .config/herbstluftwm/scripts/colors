@@ -2,6 +2,8 @@
 # To try to get the colors from xdefaults
 
 xrdb=( $(xrdb -query | grep -P "color[0-9]*:" | sort | cut -f 2-) )
+bground=$(xrdb -query | grep -P "background" | cut -f 2)
+fground=$(xrdb -query | grep -P "foreground" | cut -f 2)
 
 declare -A color
 
@@ -11,3 +13,6 @@ for name in black brightgreen brightyellow brightblue brightmagenta brightcyan b
   color[${name}]=${xrdb[$index]}
   ((index++))
 done
+
+color[background]="$bground"
+color[foreground]="$fground"
